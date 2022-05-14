@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(int[] answers) {
+        int[] ans = new int[3];
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {2, 1, 2, 3, 2, 4, 2, 5};
+        int[] c = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+        int s = 0;
+        for(int n : answers){
+            if(a[s %a.length] == n)ans[0]++;
+            if(b[s %b.length] == n)ans[1]++;
+            if(c[s %c.length] == n)ans[2]++;
+            s++;
+        }
+        int max = Math.max(ans[0],Math.max(ans[1],ans[2]));
+        Queue<Integer> q = new LinkedList<>();
+        for(int i = 0; i < 3; i++){
+            if(ans[i] == max) q.add(i + 1);
+        }
+        int [] answer = new int[q.size()];
+        s = 0;
+        while(!q.isEmpty()){
+            answer[s++] = q.poll();
+        }
+        
+        return answer;
+    }
+}

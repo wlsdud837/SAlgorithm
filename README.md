@@ -3,8 +3,8 @@
 
 ### :page_facing_up: 이번 주 과제 (5월 2주차)
 * 백준 안전영역 https://www.acmicpc.net/problem/2468
-* 프로그래머스 두 동전 https://programmers.co.kr/learn/courses/30/lessons/43165
-* 프로그래머스 카카오프렌즈 컬러링 북 https://programmers.co.kr/learn/courses/30/lessons/42840
+* 프로그래머스 타켓넘버 https://programmers.co.kr/learn/courses/30/lessons/43165
+* 프로그래머스 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840
 
 ---
 

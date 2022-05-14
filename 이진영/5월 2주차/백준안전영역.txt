@@ -1,0 +1,70 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Main {
+	static int []di = {0,1,0,-1};
+	static int []dj = {1,0,-1,0};
+	public static void main(String[] args) throws Exception {
+		BufferedReader  br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		st = new StringTokenizer(br.readLine());
+		int size = Integer.parseInt(st.nextToken());
+		int [][]map = new int[size][size];
+		
+		
+		for(int i = 0; i < size; i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j = 0 ; j < size; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		//System.out.println("시작");
+		int result = 0;
+		for(int h = 0; h <= 100; h++) {
+			int t = bfs(map, h, size);
+			result =  Math.max(t, result);
+			if(t == 0)break;
+		}
+		System.out.println(result);
+	}
+	static public int bfs(int [][]map, int h, int size) {
+		boolean [][]f = new boolean[size][size];
+		int [][]c = new int[size][size];
+		int res = 0;
+		Queue<Pair> q = new LinkedList<Pair>();
+		
+		for(int i = 0; i < size; i++) {
+			for(int j = 0 ; j < size; j++) {
+				if(map[i][j] > h && !f[i][j]) {
+					res++;
+					f[i][j] = true;
+					q.add(new Pair(i, j));
+					while(!q.isEmpty()) {
+						Pair p = q.poll();
+						for(int x = 0; x < 4; x++) {
+							int dy = p.y + di[x];
+							int dx = p.x + dj[x];
+							if(dx < 0 || dy < 0 || dx >= size || dy >= size || f[dy][dx] || map[dy][dx] <= h )continue;
+							f[dy][dx] = true;
+							q.add(new Pair(dy, dx));
+						}
+					}
+				}
+				f[i][j] = true;
+			}
+		}
+		return res;
+	}
+}
+
+class Pair{
+	int y;
+	int x;
+	public Pair(int y, int x) {
+		this.y = y;
+		this.x = x;
+	}
+}

@@ -1,0 +1,29 @@
+class Solution {
+    static int res = 0;
+    public int solution(int[] num, int t) {
+        int answer = 0;
+        int sum = 0;
+        for(int s: num)sum += s;
+        dfs(num, t, 0, sum);
+        answer = res;
+        return answer;
+    }
+    public static void dfs(int []num,int t,int len,int sum){
+        if(sum < t)return;
+        if(num.length == len){
+            if(t == sum)res++;
+        }else {
+        dfs(num, t, len + 1,sum);
+
+        dfs(num, t, len + 1,sum - 2 * num[len]);
+
+        }
+    }
+    public static int sum(int[] num){
+        int r = 0;
+        for(int a : num){
+            r += a;
+        }
+        return r;
+    }
+}
