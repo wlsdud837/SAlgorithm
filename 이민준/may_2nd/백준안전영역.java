@@ -68,17 +68,21 @@ public class 백준안전영역 {
         int dir[][] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
         int pos, r, c;
         int tmpR, tmpC;
+        int size;
 
         while (!positionQ.isEmpty()) {
-            pos = positionQ.poll();
-            r = pos / 1000;
-            c = pos % 1000;
-            for (int d = 0; d < 4; d++) {
-                tmpR = r + dir[d][0];
-                tmpC = c + dir[d][1];
-                if (isIn(N, tmpR, tmpC) && !chkMap[tmpR][tmpC]) {
-                    chkMap[tmpR][tmpC] = true;
-                    positionQ.offer(tmpR * 1000 + tmpC);
+            size = positionQ.size();
+            for (int i = 0; i < size; i++) {
+                pos = positionQ.poll();
+                r = pos / 1000;
+                c = pos % 1000;
+                for (int d = 0; d < 4; d++) {
+                    tmpR = r + dir[d][0];
+                    tmpC = c + dir[d][1];
+                    if (isIn(N, tmpR, tmpC) && !chkMap[tmpR][tmpC]) {
+                        chkMap[tmpR][tmpC] = true;
+                        positionQ.offer(tmpR * 1000 + tmpC);
+                    }
                 }
             }
         }
