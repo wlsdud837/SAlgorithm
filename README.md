@@ -3,10 +3,11 @@
 
 ✔ Branch 안쓰는 대신 항상 `$git push` 전에 `pull` 먼저 받고 push 해주기❗🤙
 
-## :page_facing_up: 이번 주 과제 (5월 2주차)
-* 백준 안전영역 https://www.acmicpc.net/problem/2468
-* 프로그래머스 타켓넘버 https://programmers.co.kr/learn/courses/30/lessons/43165
-* 프로그래머스 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840
+## :page_facing_up: 이번 주 과제 (5월 3주차)
+* (공통) 백준 그림 https://www.acmicpc.net/problem/1926
+* 프로그래머스 숫자 문자열과 영단어 https://programmers.co.kr/learn/courses/30/lessons/81301
+* 프로그래머스 위장 https://programmers.co.kr/learn/courses/30/lessons/42578
+* 프로그래머스 거리두기 확인하기 https://programmers.co.kr/learn/courses/30/lessons/81302
 
 ---
 
