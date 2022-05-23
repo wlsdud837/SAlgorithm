@@ -9,8 +9,8 @@ n, m = map(int, input().split())
 visited = [list(map(int, input().split())) for _ in range(n)]
 
 width = 0 
-max_width = 0
-cnt = 0
+max_width = 0 # 최대 그림 넓이
+cnt = 0 # 그림 수
 
 # 상하좌우
 dx = [-1, 1, 0, 0]
@@ -30,6 +30,7 @@ def bfs(x, y):
                 width += 1
                 visited[nx][ny] = 0
                 queue.append((nx, ny))
+    # 최대 그림 넓이 계속 체크
     max_width = max(width, max_width)
     width = 0
 
