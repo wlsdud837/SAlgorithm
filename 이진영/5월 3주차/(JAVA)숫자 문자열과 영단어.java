@@ -1,5 +1,8 @@
 import java.util.*;
-
+/*
+* 1. replace 로 풀기
+* 2.  0 ~ 9 또는 3글자 확인하여 숫자 이어 붙이기
+*/
 class Solution {
     public int solution(String s) {
         int a = 0;
