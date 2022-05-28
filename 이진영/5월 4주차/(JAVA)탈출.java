@@ -6,10 +6,6 @@ import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/*
-   사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
-   이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
- */
 class Solution
 {
 	public static void main(String args[]) throws Exception
@@ -19,8 +15,10 @@ class Solution
 		StringTokenizer st;
 		st = new StringTokenizer(br.readLine());
 		int T =  Integer.parseInt(st.nextToken());
-		
-		
+		int [][]map = new int[1000][1000];
+		boolean [][]vmap = new boolean[1000][1000];
+		boolean [][]smap = new boolean[1000][1000];
+
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
 			st = new StringTokenizer(br.readLine());
@@ -32,9 +30,13 @@ class Solution
 			Queue<Pair> qf = new LinkedList<Pair>();
 			Queue<Pair> qv = new LinkedList<Pair>();
 			Queue<Pair2> qs = new LinkedList<Pair2>();
-			int [][]map = new int[r][c];
-			boolean [][]vmap = new boolean[r][c];
-			boolean [][]smap = new boolean[r][c];
+            for(int i = 0 ; i < r; i++){
+                for(int j = 0; j < c; j++){
+                    map[i][j] = 0;
+                    vmap[i][j] = false;
+                    smap[i][j] = false;
+                }
+            }
 			int res = 0;
 			boolean flag = true;
 			
@@ -71,7 +73,7 @@ class Solution
 					for(int i = 0; i <4; i++) {
 						int dy = p.y + di[i];
 						int dx = p.x + dj[i];
-						if(dx < 0 || dy < 0 || dx >= c || dy >= r || map[dy][dx] != 'A') continue;
+						if(dx < 0 || dy < 0 || dx >= c || dy >= r || map[dy][dx] != 'A' || map[dy][dx] == 'F') continue;
 						map[dy][dx] = 'F';
 						tempqf.add(new Pair(dy, dx));
 					}
@@ -85,7 +87,7 @@ class Solution
 						int dy = p.y + di[i];
 						int dx = p.x + dj[i];
 						int dk = p.k;
-						if(dx < 0 || dy < 0 || dx >= c || dy >= r || smap[dy][dx] ) continue;
+						if(dx < 0 || dy < 0 || dx >= c || dy >= r || smap[dy][dx] || map[dy][dx] == 'X') continue;
 						if(map[dy][dx] == 'A') {
 							smap[dy][dx] = true;
 							tempqs.add(new Pair2(dy, dx,K));
@@ -110,7 +112,7 @@ class Solution
 					for(int i = 0; i <4; i++) {
 						int dy = p.y + di[i];
 						int dx = p.x + dj[i];
-						if(dx < 0 || dy < 0 || dx >= c || dy >= r || vmap[dy][dx] ) continue;
+						if(dx < 0 || dy < 0 || dx >= c || dy >= r || vmap[dy][dx] || map[dy][dx] == 'X' ) continue;
 						vmap[dy][dx] = true;
 						if(map[dy][dx] == 'A') {
 							tempqv.add(new Pair(dy, dx));
@@ -125,10 +127,7 @@ class Solution
 					}
 				}
 				qv.addAll(tempqv);
-				//System.out.println(res);
-
 			}
-			
 			System.out.println("#"+test_case+" "+res);
 		}
 		
