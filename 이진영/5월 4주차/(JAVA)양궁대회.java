@@ -1,5 +1,9 @@
 import java.util.*;
-
+/*
+* 1. 상대가 맞춘 활 + 1 또는 0을 선택하여 조합을 구현
+* 2. 다 사용 못 한 활은 0으로 모은다.
+* 3. 점수 결과를 반영하여 최신화 한다.
+*/
 class Solution {
     static int []ans;
     static int max;
@@ -38,7 +42,6 @@ class Solution {
                 if(max < diff){
                     max = diff;
                     for(int a : answer)ans[i++] = a;
-                  
                     return;
                 }
                 else if(max == diff && check(ans, answer)){

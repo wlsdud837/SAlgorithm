@@ -24,11 +24,12 @@ public class Main {
 				else  map[i][j] = a - 'A';
 			}
 		}
-		
+		// 연쇄
 		map = bfs(map, 12, 6);
 		if(flag)max++;
 		while(flag) {
-			map = g(map, 12, 6);
+			// 바닥으로 내리기
+            map = g(map, 12, 6);
 			map = bfs(map, 12, 6);
 			if(flag)max++;
 		}
