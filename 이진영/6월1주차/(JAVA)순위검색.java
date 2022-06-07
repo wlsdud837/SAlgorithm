@@ -1,4 +1,12 @@
 import java.util.*;
+
+/*
+*  1. 총 24가지 자료의 종류를 트리 구조로 나누어 점수를 기록한다.
+*  2. 조건에 맞는 24가지를 골라 선택 한다.
+*  3. 조건에 맞는 점수를 카운트하여 시간 복잡도를 해결한다.
+*
+*
+*/
 class Solution {
     static int num;
     static int [] answers;

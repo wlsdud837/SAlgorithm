@@ -1,5 +1,11 @@
 import java.util.*;
-
+/*
+* 1. 곱셈, 더하기 , 나누기 우선 순위 경우 수 6가지를 모두 계산한다.
+* 2. 스택 또는 Deque를 활용하여 우선 순위를 구현한다.
+* 3. 절대값을 최대값 갱신
+*
+*
+*/
 class Solution {
     static long answer;
     public long solution(String exp) {
