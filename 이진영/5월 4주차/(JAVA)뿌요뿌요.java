@@ -5,7 +5,12 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
-
+/*
+* 1. 조건에 맞는 블록 삭제
+* 2. 중력에 의한 블록 내리기
+* 3. 조건에 맞는 블록이 있으면 계속 없애기
+*
+*/
 public class Main {
 	static int max;
 	static boolean flag;

@@ -5,7 +5,13 @@ import java.util.StringTokenizer;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+/*
+* 1. 불 넓어지는 것 BFS 로 표현
+* 2. 주인공이 현재 위치에서 이동할 수 잇는 방법 이동
+* 3. 주인공은 벽을 통과할 때 밖으로 나올지 장담할 수 없다. 
+* 4. 이를 위해 벽을 통과하는 동안은 여러 시도를 허용한다.
+* 3. 악당에 조건에 맞게 이동 
+*/
 class Solution
 {
 	public static void main(String args[]) throws Exception

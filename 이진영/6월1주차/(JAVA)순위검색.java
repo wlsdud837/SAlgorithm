@@ -1,4 +1,12 @@
 import java.util.*;
+
+/*
+*  1. 총 24가지 자료의 종류를 트리 구조로 나누어 점수를 기록한다.
+*  2. 조건에 맞는 24가지를 골라 선택 한다.
+*  3. 조건에 맞는 점수를 카운트하여 시간 복잡도를 해결한다.
+*
+*
+*/
 class Solution {
     static int num;
     static int [] answers;
@@ -67,20 +75,5 @@ class Solution {
                 dfs(ans, list,select + m1[depth].get(ans[depth * 2]),m1,depth + 1,answer,ii);
             }
         }
-    }
-    static int binarySearch(ArrayList<Integer> array, int arrayLength, int searchValue){
-        int first = 0;                            // 검색 범위의 첫 인덱스
-        int last = arrayLength-1;        // 검색 범위의 끝 인덱스
-        int center = 0;
-        do{
-            center = (first +  last) /2 ; // 중앙 요소의 인덱스
-            if(array.get(center) == searchValue) 
-                return center;    // 검색 성공
-            else if(array.get(center) < searchValue) 
-                first = center+1;    // 검색 범위를 뒤쪽 절반으로 좁힘
-            else 
-                 last = center -1;    // 검색 범위를 앞쪽 절반으로 좁힘
-        }while(first <=  last);
-        return center;        // 검색 실패
     }
 }
