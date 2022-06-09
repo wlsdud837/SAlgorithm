@@ -3,16 +3,22 @@
 
 ✔ Branch 안쓰는 대신 항상 `$git push` 전에 `pull` 먼저 받고 push 해주기❗🤙
 
-## :page_facing_up: 저번 주 과제 (5월 4주차)
-* 삼성아카데미 탈출 https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AWlq-Cvq6joDFASP
-* 백준 Puyo Puyo https://www.acmicpc.net/problem/11559
-* 프로그래머스 불량 사용자 https://programmers.co.kr/learn/courses/30/lessons/64064
-* 프로그래머스 양궁대회 https://programmers.co.kr/learn/courses/30/lessons/92342
+## :page_facing_up: 저번 주 과제 (6월 1주차)
+* 프로그래머스 프렌즈4블록 (공통) https://programmers.co.kr/learn/courses/30/lessons/17679
+* 프로그래머스 주차 요금 계산 https://programmers.co.kr/learn/courses/30/lessons/92341
+* 백준 카드정렬 https://www.acmicpc.net/problem/1715
+* 프로그래머스 순위 (추가) https://programmers.co.kr/learn/courses/30/lessons/49191
 
 ## :page_facing_up: 저번 주 과제 (6월 1주차)
 * 백준 가르침 (공통) https://www.acmicpc.net/problem/1062
 * 프로그래머스 수식 최대화 https://programmers.co.kr/learn/courses/30/lessons/67257
 * 프로그래머스 순위 검색 https://programmers.co.kr/learn/courses/30/lessons/72412
+
+## :page_facing_up: 저번 주 과제 (5월 4주차)
+* 삼성아카데미 탈출 https://swexpertacademy.com/main/code/userProblem/userProblemDetail.do?contestProbId=AWlq-Cvq6joDFASP
+* 백준 Puyo Puyo https://www.acmicpc.net/problem/11559
+* 프로그래머스 불량 사용자 https://programmers.co.kr/learn/courses/30/lessons/64064
+* 프로그래머스 양궁대회 https://programmers.co.kr/learn/courses/30/lessons/92342
 
 ---
 
