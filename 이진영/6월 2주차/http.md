@@ -1,6 +1,8 @@
 
 # http
 
+https://medium.com/@shlee1353/http1-1-vs-http2-0-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EA%B0%84%EB%8B%A8%ED%9E%88-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0-5727b7499b78
+
 ## http/1.0
 - rtt  증가
     rtt란 패킷이 목적에 도달하고 나서 다시 출발지로 돌아오기까지 걸리는 시간 패킷 왕복시간
