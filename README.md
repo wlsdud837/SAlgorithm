@@ -3,6 +3,9 @@
 
 ✔ Branch 안쓰는 대신 항상 `$git push` 전에 `pull` 먼저 받고 push 해주기❗🤙
 
+## :page_facing_up: (7월 2주차) 과제 
+* 프로그래머스 게임 맵 최단거리 (공통) https://school.programmers.co.kr/learn/courses/30/lessons/1844
+
 ## :page_facing_up: (6월 2주차) 과제 
 * 프로그래머스 프렌즈4블록 (공통) https://programmers.co.kr/learn/courses/30/lessons/17679
 * 프로그래머스 주차 요금 계산 https://programmers.co.kr/learn/courses/30/lessons/92341
