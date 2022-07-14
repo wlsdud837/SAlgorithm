@@ -2,6 +2,9 @@
 ---
 
 ✔ Branch 안쓰는 대신 항상 `$git push` 전에 `pull` 먼저 받고 push 해주기❗🤙
+## :page_facing_up: (7월 2주차) 과제 
+* 백준 연구소 (공통) https://www.acmicpc.net/problem/14502
+* 백준 합분해 (선택) https://www.acmicpc.net/problem/2225
 
 ## :page_facing_up: (7월 2주차) 과제 
 * 프로그래머스 게임 맵 최단거리 (공통) https://school.programmers.co.kr/learn/courses/30/lessons/1844
