@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+/**
+ * 1. 빈 공간에 벽 3개 세우기 (DFS)
+ * 2. 바이러스 퍼뜨리기 (BFS)
+ * 3. 빈 공간(0) 넓이 계산
+ */
 public class BOJ_연구소 {
     static int row;
     static int col;
@@ -18,19 +23,23 @@ public class BOJ_연구소 {
     static int answer;
 
     public static void main(String[] args) throws Exception {
+        // 입력
         initValue();
+        // 벽 3개 세우기
         buildWall(0, 0);
         System.out.println(answer);
     }
 
     private static void buildWall(int start, int cnt) {
         if (cnt == 3) {
+            // map copy 후 선택된 벽 3개 세우기
             int[][] mapExec = new int[row][col];
             mapCopy(mapExec, map);
             for (int i = 0; i < 3; i++) {
                 mapExec[selected[i] / mulValue][selected[i] % mulValue] = 1;
             }
             //printMap(mapExec);
+            // 바이러스 퍼뜨리고 빈 영역 카운트
             answer = Math.max(answer, extendVirus(mapExec));
             return;
         }
