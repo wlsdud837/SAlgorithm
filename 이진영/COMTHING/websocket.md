@@ -6,11 +6,14 @@
 - 일반 Socket통신과 달리 HTTP 80 Port를 사용하므로 방화벽에 제약이 없으며 통상 WebSocket으로 불린다
 - 접속까지는 HTTP 프로토콜 그 이후 그 이후 통신은 자체적인 WebSocket 프로토콜로 통신
 
- ## WebSocket이 존재하기 전
+ ## WebSocket이 존재하기 전\
+ 
+ ![vm](./event.png)
+
 - Polling
 - Long Polling
 - Streaming등의 방식으로 해결
-![vm](./event.png)
+
 ### Polling
 - 서버에 계속 요청으로 이벤트 내용을 전달
 - 가장 쉬운 구현 하지만 클라이언트의 수가 많아지면 서버의 부담이 급증
