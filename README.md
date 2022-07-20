@@ -2,6 +2,11 @@
 ---
 
 ✔ Branch 안쓰는 대신 항상 `$git push` 전에 `pull` 먼저 받고 push 해주기❗🤙
+## :page_facing_up: (7월 4주차) 과제 
+* 백준 숫자고르기  https://www.acmicpc.net/problem/2668
+* 백준 전화번호 목록  https://www.acmicpc.net/problem/5052
+* 백준 여왕벌 https://www.acmicpc.net/problem/10836
+
 ## :page_facing_up: (7월 3주차) 과제 
 * 백준 연구소 (공통) https://www.acmicpc.net/problem/14502
 * 백준 합분해 (선택) https://www.acmicpc.net/problem/2225
